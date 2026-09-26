@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const MONGO_URI = 'mongodb+srv://kp36:kp3645K@cluster0.gyccgyy.mongodb.net/?appName=Cluster0';
+const MONGO_URI = 'MONGODB_URI';
 mongoose.connect(MONGO_URI).then(() => console.log('✅ MongoDB Connected'));
 
 const Question = mongoose.model('Question', new mongoose.Schema({
